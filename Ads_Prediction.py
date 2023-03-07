@@ -11,12 +11,12 @@ st.sidebar.header('User Input Parameters')
 #'TV', 'Radio', 'Newspaper'
 
 def user_input_features():
-    ads_TV = st.sidebar.slider('Advertisement on TV', 0, 500, 500)
-    ads_Radio = st.sidebar.slider('Advertisement on Radio', 0, 500, 500)
-    ads_Newspaper = st.sidebar.slider('Advertisement on Newspaper', 0, 500, 500)
-    data = {'ads_TV': ads_TV,
-            'ads_Radio': ads_Radio,
-            'ads_Newspaper': ads_Newspaper}
+    ads_TV = st.sidebar.slider('Advertisement on TV', 0, 500, 200)
+    ads_Radio = st.sidebar.slider('Advertisement on Radio', 0, 500, 200)
+    ads_Newspaper = st.sidebar.slider('Advertisement on Newspaper', 0, 500, 200)
+    data = {'Advertisment on TV': ads_TV,
+            'Advertisment on Radio': ads_Radio,
+            'Advertisment on Newspaper': ads_Newspaper}
     features = pd.DataFrame(data, index=[0])
     return features
 
