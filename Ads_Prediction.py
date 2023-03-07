@@ -44,15 +44,5 @@ model.fit(X, y)
 # Predict the number of sales for new data
 predicted_sales = model.predict(df_input)
 
-def Results():
-    Newdata = {'TV': ads_TV,
-            'Radio': ads_Radio,
-            'Newspaper': ads_Newspaper,
-            'Predicted Sales': predicted_sales}
-    Result_Prediction = pd.DataFrame(Newdata, index=[0])
-    return Result_Prediction
-
-Result_Pred = Results()
-
 st.subheader('Prediction')
-st.write(Result_Pred)
+st.write(predicted_sales)
