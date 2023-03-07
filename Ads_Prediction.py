@@ -11,9 +11,9 @@ st.sidebar.header('User Input Parameters')
 #'TV', 'Radio', 'Newspaper'
 
 def user_input_features():
-    ads_TV = st.sidebar.slider('Advertisement on TV', 0, 1000, 500)
-    ads_Radio = st.sidebar.slider('Advertisement on Radio', 0, 1000, 500)
-    ads_Newspaper = st.sidebar.slider('Advertisement on Newspaper', 0, 1000, 500)
+    ads_TV = st.sidebar.slider('Advertisement on TV', 0, 500, 500)
+    ads_Radio = st.sidebar.slider('Advertisement on Radio', 0, 500, 500)
+    ads_Newspaper = st.sidebar.slider('Advertisement on Newspaper', 0, 500, 500)
     data = {'ads_TV': ads_TV,
             'ads_Radio': ads_Radio,
             'ads_Newspaper': ads_Newspaper}
@@ -28,8 +28,8 @@ st.write(df_input)
 # Load dataset into a pandas dataframe
 df_train = pd.read_csv('Advertising.csv')
 
-st.subheader('View Data')
-st.write(df_train)
+#st.subheader('View Data')
+#st.write(df_train)
 
 # Define features and target variable
 X = df_train[['TV', 'Radio', 'Newspaper']]
