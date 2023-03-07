@@ -44,5 +44,9 @@ model.fit(X, y)
 # Predict the number of sales for new data
 predicted_sales = model.predict(df_input)
 
-st.subheader('Prediction')
-st.write('Predicted Sales Amount :', predicted_sales[0])
+#st.subheader('Prediction')
+#st.write('Predicted Sales Amount :', predicted_sales[0])
+
+st.write("""
+# Predicted Sales Amount :
+""", predicted_sales[0])
