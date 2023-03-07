@@ -32,19 +32,19 @@ st.subheader('View Data')
 st.write(df_train)
 
 # Define features and target variable
-#X = df_train[['TV', 'Radio', 'Newspaper']]
-#y = df_train['Sales']
+X = df_train[['TV', 'Radio', 'Newspaper']]
+y = df_train['Sales']
 
 # Create a linear regression model
-#model = LinearRegression()
+model = LinearRegression()
 
 # Fit the model on the training data
-#model.fit(X, y)
+model.fit(X, y)
 
 # Predict the number of sales for new data
-#predicted_sales = model.predict(df_input)
+predicted_sales = model.predict(df_input)
 
 
-#st.subheader('Prediction')
-#st.write(predicted_sales)
+st.subheader('Prediction')
+st.write(predicted_sales)
 
