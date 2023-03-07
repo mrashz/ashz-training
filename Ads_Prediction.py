@@ -46,5 +46,5 @@ predicted_sales = model.predict(df_input)
 
 
 st.subheader('Prediction')
-st.write(predicted_sales)
+st.write('Sales': predicted_sales)
 
