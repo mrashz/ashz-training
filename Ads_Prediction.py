@@ -48,5 +48,5 @@ predicted_sales = model.predict(df_input)
 #st.write('Predicted Sales Amount :', predicted_sales[0])
 
 st.write(f"""
-# Predicted Sales Amount :{predicted_sales[0]}
+# Predicted Sales Amount {predicted_sales[0]}
 """)
