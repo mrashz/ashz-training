@@ -41,7 +41,7 @@ else:
     for i in range(1000):
    
         latest_iteration.text(f'Iteration {i+1}')
-        bar.progress(i + 1)
+        bar.progress(i + 0.1)
         time.sleep(0.1)
 
     '...and now we\'re done!'
