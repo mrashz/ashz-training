@@ -26,7 +26,10 @@ st.subheader('User Input parameters')
 st.write(df_input)
 
 # Load dataset into a pandas dataframe
-#df_train = pd.read_csv('Advertising.csv')
+df_train = pd.read_csv('Advertising.csv')
+
+st.subheader('View Data')
+st.write(df_train)
 
 # Define features and target variable
 #X = df_train[['TV', 'Radio', 'Newspaper']]
