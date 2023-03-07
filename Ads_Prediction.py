@@ -45,4 +45,4 @@ model.fit(X, y)
 predicted_sales = model.predict(df_input)
 
 st.subheader('Prediction')
-st.write(predicted_sales)
+st.write(predicted_sales[0])
