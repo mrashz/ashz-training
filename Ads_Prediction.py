@@ -26,22 +26,22 @@ st.subheader('User Input parameters')
 st.write(df_input)
 
 # Load dataset into a pandas dataframe
-df_train = pd.read_csv('Advertising.csv')
+#df_train = pd.read_csv('Advertising.csv')
 
 # Define features and target variable
-X = df_train[['TV', 'Radio', 'Newspaper']]
-y = df_train['Sales']
+#X = df_train[['TV', 'Radio', 'Newspaper']]
+#y = df_train['Sales']
 
 # Create a linear regression model
-model = LinearRegression()
+#model = LinearRegression()
 
 # Fit the model on the training data
-model.fit(X, y)
+#model.fit(X, y)
 
 # Predict the number of sales for new data
-predicted_sales = model.predict(df_input)
+#predicted_sales = model.predict(df_input)
 
 
-st.subheader('Prediction')
-st.write(predicted_sales)
+#st.subheader('Prediction')
+#st.write(predicted_sales)
 
